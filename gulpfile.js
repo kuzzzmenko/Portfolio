@@ -7,6 +7,8 @@ const pug = require('gulp-pug');
 const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
+
 
 // scripts
 const gulpWebpack = require('gulp-webpack');
@@ -48,6 +50,10 @@ function styles() {
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(sourcemaps.write())        
         .pipe(rename({suffix: '.min'}))
+        .pipe(autoprefixer({
+            browsers: ['last 4 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest(paths.styles.dest))       
 }
 
