@@ -4,14 +4,73 @@ block variables
   - var title = 'Блог'
 
 block content
-  h1 Блог
-  ul
-    li
-      h2 Заголовок статьи
-      p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-    li
-      h2 Ещё статья
-      p Далеко-далеко за словесными горами в стране.
-    li
-      h2 Последняя статья
-      p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Курсивных то осталось за.
+  .wrapper-blog
+    section.section-blog
+      .socials
+        ul.social 
+          li.social__item
+            a.link(href="VK") vk 
+          li.social__item
+            a.link(href="GitHub") github
+          li.social__item
+            a.link(href="Link") Linkdn 
+      .menu-hambuger
+        a.menu-hamburger__link
+          img.menu-hamburger__img(src="assets/images/icons/hamburger.png", alt="")
+      .blog
+        .blog__avatar
+          img.blog__avatar-img(src="assets/images/me.jpg", alt="")
+        h1.blog__title Блог
+        .blog-text Статьи, которые я написал
+      .left-triangle
+      .right-triangle
+    .blog-content
+      sidebar.sidebar
+        ul.sidebar__list
+          li.sidebar__item.sidebar__item_active Самое важное в SASS
+          li.sidebar__item Приемы в верстке, без которых не обходится ни один сайт
+          li.sidebar__item Самый необходимый набор плагинов Gulp
+      .articles
+        ul.articles__list
+          li.articles__item
+            .articles__item-title Самое важное в SASS
+            .articles__item-date 22 ноября 2017
+            .articles__item-text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, quos minima! Necessitatibus, soluta blanditiis! Quia beatae aspernatur sapiente illo laboriosam incidunt molestias quae ducimus deserunt soluta. Recusandae quidem magni rerum!
+          li.articles__item
+            .articles__item-title Приемы в верстке, без которых не обходится ни один сайт
+            .articles__item-date 22 ноября 2017
+            .articles__item-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dignissimos, possimus maxime voluptatibus suscipit similique, aperiam inventore minus magnam adipisci reprehenderit rem facere doloribus a nostrum reiciendis cum voluptatum tenetur.
+          li.articles__item
+            .articles__item-title Самый необходимый набор плагинов Gulp
+            .articles__item-date 22 ноября 2017
+            .articles__item-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nesciunt sunt rerum saepe vel labore ullam at? Illo, impedit laboriosam sequi error atque provident magnam accusamus expedita iste laudantium eaque!
+    .footer.footer-blog
+      .footer-blog__about Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+      .footer-blog__menu
+        ul.nav-list
+          li.nav-list__item
+            a.nav-list__item-link(href="") Мои работы
+          li.nav-list__item
+            a.nav-list__item-link(href="") Обо мне
+          li.nav-list__item
+            a.nav-list__item-link(href="") Блог
+          li.nav-list__item
+            a.nav-list__item-link(href="") Авторизация
+        ul.social 
+          li.social__item
+            a.link(href="VK") vk 
+          li.social__item
+            a.link(href="GitHub") github
+          li.social__item
+            a.link(href="Link") Linkdn
+      .footer-blog__contacts
+        ul.contacts
+          li.contacts__item
+            a.contacts__item-link(href="") skype
+          li.contacts__item
+            a.contacts__item-link(href="") email
+          li.contacts__item
+            a.contacts__item-link(href="") +8-800-888-88-88
+          li.contacts__item
+            a.contacts__item-link(href="") г. Москва
+    .blog-copyright &#169 Николай Кузьменко | создано с любовью в LoftShcool | 2017

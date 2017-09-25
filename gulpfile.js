@@ -8,6 +8,7 @@ const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
+const pxtorem = require('gulp-pxtorem');
 
 
 // scripts
@@ -54,7 +55,11 @@ function styles() {
             browsers: ['last 4 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest(paths.styles.dest))       
+        .pipe(pxtorem({
+            replace: true,
+            propList:['*']
+        }))
+        .pipe(gulp.dest(paths.styles.dest));
 }
 
 // webpack

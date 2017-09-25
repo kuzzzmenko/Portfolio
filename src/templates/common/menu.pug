@@ -1,10 +1,25 @@
-h2 Меню
-ul.menu
-    li
-        a(href="/index.html") Главная
-    li
-        a(href="/about.html") Обо мне
-    li
-        a(href="/my-works.html") Мои работы
-    li
-        a(href="/blog.html") Блог
+.wrapper-menu
+    .auth
+        a.btn-auth(href="") Авторизироваться
+    .main-content
+        .about
+            .about__avatar
+                img.about__avatar-img(src="assets/images/me.jpg", alt="")
+            .about__name Николай Кузьменко
+            .about__desc Личный сайт веб разработчика
+            ul.social
+                li.social__item
+                    a.link(href="VK") vk
+                li.social__item
+                    a.link(href="GitHub") github
+                li.social__item
+                    a.link(href="Link") Linkdn
+        ul.menu
+            li.menu__item
+                a.menu__link(href="/about.html") Мои работы
+            li.menu__item
+                a.menu__link(href="/my-works.html") Обо мне
+            li.menu__item
+                a.menu__link(href="/blog.html") Блог
+
+        .copyright &#169 Николай Кузьменко | создано с любовью в LoftShcool | 2017

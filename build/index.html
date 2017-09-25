@@ -11,20 +11,26 @@
     <script src="/assets/scripts/bundle.js" defer></script>
   </head>
   <body>
-    <h1>Главная</h1>
-    <form>
-      <label for="email"> </label>
-      <input name="email" id="email">
-      <label for="password"> </label>
-      <input name="password" id="password">
-      <button>Войти</button>
-    </form>
-    <h2>Меню</h2>
-    <ul class="menu">
-      <li><a href="/index.html">Главная</a></li>
-      <li><a href="/about.html">Обо мне</a></li>
-      <li><a href="/my-works.html">Мои работы</a></li>
-      <li><a href="/blog.html">Блог</a></li>
-    </ul>
+    <div class="wrapper-menu">
+      <div class="auth"><a class="btn-auth" href="">Авторизироваться</a></div>
+      <div class="main-content">
+        <div class="about">
+          <div class="about__avatar"><img class="about__avatar-img" src="assets/images/me.jpg" alt=""></div>
+          <div class="about__name">Николай Кузьменко</div>
+          <div class="about__desc">Личный сайт веб разработчика</div>
+          <ul class="social">
+            <li class="social__item"><a class="link" href="VK">vk</a></li>
+            <li class="social__item"><a class="link" href="GitHub">github</a></li>
+            <li class="social__item"><a class="link" href="Link">Linkdn</a></li>
+          </ul>
+        </div>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="/about.html">Мои работы</a></li>
+          <li class="menu__item"><a class="menu__link" href="/my-works.html">Обо мне</a></li>
+          <li class="menu__item"><a class="menu__link" href="/blog.html">Блог</a></li>
+        </ul>
+        <div class="copyright">&#169 Николай Кузьменко | создано с любовью в LoftShcool | 2017</div>
+      </div>
+    </div>
   </body>
 </html>

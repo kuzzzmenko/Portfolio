@@ -11,27 +11,77 @@
     <script src="/assets/scripts/bundle.js" defer></script>
   </head>
   <body>
-    <h1>Блог</h1>
-    <ul>
-      <li>
-        <h2>Заголовок статьи</h2>
-        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
-      </li>
-      <li>
-        <h2>Ещё статья</h2>
-        <p>Далеко-далеко за словесными горами в стране.</p>
-      </li>
-      <li>
-        <h2>Последняя статья</h2>
-        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Курсивных то осталось за.</p>
-      </li>
-    </ul>
-    <h2>Меню</h2>
-    <ul class="menu">
-      <li><a href="/index.html">Главная</a></li>
-      <li><a href="/about.html">Обо мне</a></li>
-      <li><a href="/my-works.html">Мои работы</a></li>
-      <li><a href="/blog.html">Блог</a></li>
-    </ul>
+    <div class="wrapper-blog">
+      <section class="section-blog">
+        <div class="socials">
+          <ul class="social"> 
+            <li class="social__item"><a class="link" href="VK">vk </a></li>
+            <li class="social__item"><a class="link" href="GitHub">github</a></li>
+            <li class="social__item"><a class="link" href="Link">Linkdn </a></li>
+          </ul>
+        </div>
+        <div class="menu-hambuger"><a class="menu-hamburger__link"><img class="menu-hamburger__img" src="assets/images/icons/hamburger.png" alt=""></a></div>
+        <div class="blog">
+          <div class="blog__avatar"><img class="blog__avatar-img" src="assets/images/me.jpg" alt=""></div>
+          <h1 class="blog__title">Блог</h1>
+          <div class="blog-text">Статьи, которые я написал</div>
+        </div>
+        <div class="left-triangle"></div>
+        <div class="right-triangle"></div>
+      </section>
+      <div class="blog-content">
+        <sidebar class="sidebar">
+          <ul class="sidebar__list">
+            <li class="sidebar__item sidebar__item_active">Самое важное в SASS</li>
+            <li class="sidebar__item">Приемы в верстке, без которых не обходится ни один сайт</li>
+            <li class="sidebar__item">Самый необходимый набор плагинов Gulp</li>
+          </ul>
+        </sidebar>
+        <div class="articles">
+          <ul class="articles__list">
+            <li class="articles__item">
+              <div class="articles__item-title">Самое важное в SASS</div>
+              <div class="articles__item-date">22 ноября 2017</div>
+              <div class="articles__item-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, quos minima! Necessitatibus, soluta blanditiis! Quia beatae aspernatur sapiente illo laboriosam incidunt molestias quae ducimus deserunt soluta. Recusandae quidem magni rerum!</div>
+            </li>
+            <li class="articles__item">
+              <div class="articles__item-title">Приемы в верстке, без которых не обходится ни один сайт</div>
+              <div class="articles__item-date">22 ноября 2017</div>
+              <div class="articles__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dignissimos, possimus maxime voluptatibus suscipit similique, aperiam inventore minus magnam adipisci reprehenderit rem facere doloribus a nostrum reiciendis cum voluptatum tenetur.</div>
+            </li>
+            <li class="articles__item">
+              <div class="articles__item-title">Самый необходимый набор плагинов Gulp</div>
+              <div class="articles__item-date">22 ноября 2017</div>
+              <div class="articles__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nesciunt sunt rerum saepe vel labore ullam at? Illo, impedit laboriosam sequi error atque provident magnam accusamus expedita iste laudantium eaque!</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer footer-blog">
+        <div class="footer-blog__about">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </div>
+        <div class="footer-blog__menu">
+          <ul class="nav-list">
+            <li class="nav-list__item"><a class="nav-list__item-link" href="">Мои работы</a></li>
+            <li class="nav-list__item"><a class="nav-list__item-link" href="">Обо мне</a></li>
+            <li class="nav-list__item"><a class="nav-list__item-link" href="">Блог</a></li>
+            <li class="nav-list__item"><a class="nav-list__item-link" href="">Авторизация</a></li>
+          </ul>
+          <ul class="social"> 
+            <li class="social__item"><a class="link" href="VK">vk </a></li>
+            <li class="social__item"><a class="link" href="GitHub">github</a></li>
+            <li class="social__item"><a class="link" href="Link">Linkdn</a></li>
+          </ul>
+        </div>
+        <div class="footer-blog__contacts">
+          <ul class="contacts">
+            <li class="contacts__item"><a class="contacts__item-link" href="">skype</a></li>
+            <li class="contacts__item"><a class="contacts__item-link" href="">email</a></li>
+            <li class="contacts__item"><a class="contacts__item-link" href="">+8-800-888-88-88</a></li>
+            <li class="contacts__item"><a class="contacts__item-link" href="">г. Москва</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="blog-copyright">&#169 Николай Кузьменко | создано с любовью в LoftShcool | 2017</div>
+    </div>
   </body>
 </html>
