@@ -6,22 +6,12 @@ block variables
 block content
   .wrapper-blog
     section.section-blog
-      .socials
-        ul.social 
-          li.social__item
-            a.link(href="VK") vk 
-          li.social__item
-            a.link(href="GitHub") github
-          li.social__item
-            a.link(href="Link") Linkdn 
-      .menu-hambuger
-        a.menu-hamburger__link
-          img.menu-hamburger__img(src="assets/images/icons/hamburger.png", alt="")
-      .blog
-        .blog__avatar
-          img.blog__avatar-img(src="assets/images/me.jpg", alt="")
-        h1.blog__title Блог
-        .blog-text Статьи, которые я написал
+      include ../common/header
+      .about-blog
+        .about-blog__avatar
+          img.about-blog__avatar-img(src="assets/images/me.jpg", alt="")
+        h1.about-blog__title Блог
+        .about-blog__text Сатьи, которые я написал
       .left-triangle
       .right-triangle
     .blog-content
@@ -44,33 +34,5 @@ block content
             .articles__item-title Самый необходимый набор плагинов Gulp
             .articles__item-date 22 ноября 2017
             .articles__item-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nesciunt sunt rerum saepe vel labore ullam at? Illo, impedit laboriosam sequi error atque provident magnam accusamus expedita iste laudantium eaque!
-    .footer.footer-blog
-      .footer-blog__about Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
-      .footer-blog__menu
-        ul.nav-list
-          li.nav-list__item
-            a.nav-list__item-link(href="") Мои работы
-          li.nav-list__item
-            a.nav-list__item-link(href="") Обо мне
-          li.nav-list__item
-            a.nav-list__item-link(href="") Блог
-          li.nav-list__item
-            a.nav-list__item-link(href="") Авторизация
-        ul.social 
-          li.social__item
-            a.link(href="VK") vk 
-          li.social__item
-            a.link(href="GitHub") github
-          li.social__item
-            a.link(href="Link") Linkdn
-      .footer-blog__contacts
-        ul.contacts
-          li.contacts__item
-            a.contacts__item-link(href="") skype
-          li.contacts__item
-            a.contacts__item-link(href="") email
-          li.contacts__item
-            a.contacts__item-link(href="") +8-800-888-88-88
-          li.contacts__item
-            a.contacts__item-link(href="") г. Москва
+    include ../common/footer
     .blog-copyright &#169 Николай Кузьменко | создано с любовью в LoftShcool | 2017

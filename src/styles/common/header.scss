@@ -1,0 +1,18 @@
+.header {
+    padding: 10px;
+    display: flex;
+    &__socials {
+    margin-right: auto;
+}
+}
+
+.menu-hambuger {
+    &__link {
+        width: 25px;
+        height: 25px;
+    }
+}
+.menu-hamburger__img {
+    width: 25px;
+    height: 25px;
+}
